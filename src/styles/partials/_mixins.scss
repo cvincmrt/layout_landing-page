@@ -1,3 +1,4 @@
-@mixin font {
-  font-family: 'Courier New', Courier, monospace;
+@mixin d-flex {
+  display: flex;
+  align-items: center;
 }

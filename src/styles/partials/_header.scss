@@ -1,0 +1,50 @@
+.header{
+  width: $header-width;
+  height: $header-height;
+  background: url(/src/img/header-bg.jpg) no-repeat center;
+  background-size: cover;
+
+  .container{
+    @include d-flex;
+
+    justify-content: space-between;
+  }
+
+  &__logo{
+    display: block;
+    width: $logo-width;
+    height: $logo-height;
+  }
+
+  &__nav{
+    background-color: greenyellow;
+  }
+
+  &__list{
+    @include d-flex;
+
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__item{
+    display: block;
+    height: 32px;
+
+    &:nth-child(1){
+      background: url(/src/img/Icon-Phone-call.png) no-repeat center;
+      &:hover::before{
+      content: '0918 722 955';
+      }
+    }
+
+    &:nth-child(2) > a{
+      display: block;
+      background: url(/src/img/Icon-Burger-menu.png) no-repeat center;
+      &:hover{
+        background: url(/src/img/Icon-Burger-menu-hover.png) no-repeat center;
+      }
+    }
+  }
+
+}
