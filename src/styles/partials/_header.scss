@@ -3,21 +3,30 @@
   height: $header-height;
   background: url(/src/img/header-bg.jpg) no-repeat center;
   background-size: cover;
+  margin-bottom: 120px;
 
   .container{
-    @include d-flex;
-
+    display: flex;
+    height: 100%;
+    position: relative;
     justify-content: space-between;
+    padding-top: 32px;
+
+    &::before{
+      @include font(56px, 700, 3.5rem, $white-color);
+
+      position: absolute;
+      width: 411px;
+      bottom: 52px;
+      left: 0;
+      content: 'Your senses. Set free.';
+    }
   }
 
   &__logo{
     display: block;
     width: $logo-width;
     height: $logo-height;
-  }
-
-  &__nav{
-    background-color: greenyellow;
   }
 
   &__list{
@@ -28,19 +37,32 @@
   }
 
   &__item{
+    position: relative;
     display: block;
+    width: 32px;
     height: 32px;
 
     &:nth-child(1){
+      transition: all 5s ease;
       background: url(/src/img/Icon-Phone-call.png) no-repeat center;
+
       &:hover::before{
-      content: '0918 722 955';
+        @include font(12px, 700, 32px);
+
+        font-family: Inter, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: absolute;
+        top: 0;
+        left: -145px;
+        content: '+1 234 555 - 55 - 55';
+        margin-right: 8px;
       }
     }
 
-    &:nth-child(2) > a{
-      display: block;
+    &:nth-child(2){
       background: url(/src/img/Icon-Burger-menu.png) no-repeat center;
+
       &:hover{
         background: url(/src/img/Icon-Burger-menu-hover.png) no-repeat center;
       }

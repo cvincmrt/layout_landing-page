@@ -2,3 +2,11 @@
   display: flex;
   align-items: center;
 }
+
+@mixin font($fontSize: 1rem, $fontWeight: 400, $lineHeight: 1.5rem, $fontColor: $secondary-color, $fontAlign:left){
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $fontColor;
+  text-align: $fontAlign;
+}
