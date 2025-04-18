@@ -1,0 +1,44 @@
+.recommended{
+  width: 100%;
+  margin-bottom: $marginBottomUp;
+
+  .container{
+    display: flex;
+    gap: 24px;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+
+  &__card{
+    width: $recommended-card-width;
+    height: $recommended-card-height;
+  }
+
+  &__img-card{
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+
+  &__title-card{
+    @include font(18px, 700);
+
+    font-family: Manrope, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  &__description-card{
+    @include font(16px, 400);
+
+    font-family: Manrope, sans-serif;
+    margin-bottom: 12px;
+  }
+
+  &__cost{
+    @include font(18px, 700);
+
+    font-family: Manrope, sans-serif;
+    text-transform: uppercase;
+  }
+
+}
