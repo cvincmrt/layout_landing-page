@@ -1,4 +1,4 @@
-.recommended{
+.sound{
   width: 100%;
   margin-bottom: $marginBottomUp;
 
@@ -12,7 +12,7 @@
     }
 
     &__card{
-      grid-column: span 4;
+      grid-column: span 6;
 
       .card{
         &__img{
@@ -28,20 +28,6 @@
           text-transform: uppercase;
           margin-bottom: 8px;
         }
-
-        &__description{
-          @include font(16px, 400);
-
-          font-family: Manrope, sans-serif;
-          margin-bottom: 12px;
-        }
-
-        &__cost{
-          @include font(18px, 700);
-
-          font-family: Manrope, sans-serif;
-          text-transform: uppercase;
-        }
+      }
     }
-  }
 }
