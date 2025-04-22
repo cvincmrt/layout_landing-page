@@ -8,7 +8,6 @@
       @include font(48px, 700, 48px);
 
       font-family: Manrope, sans-serif;
-      margin-bottom: $marginBottomDown;
     }
 
     &__card{
@@ -18,16 +17,25 @@
         &__img{
           display: block;
           width: 100%;
-          margin-bottom: 24px;
+          margin-bottom: 16px;
         }
 
         &__title{
-          @include font(18px, 700);
+          @include font(24px, 700, 34px);
 
           font-family: Manrope, sans-serif;
-          text-transform: uppercase;
-          margin-bottom: 8px;
         }
       }
     }
+
+    &__btn{
+      grid-column: span 4;
+
+      @include btn;
+    }
+
+    &__btn--primary{
+      background-color: #F98921;
+    }
+
 }

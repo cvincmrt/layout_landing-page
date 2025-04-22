@@ -1,0 +1,32 @@
+.timeless{
+  width: 100%;
+  background-color: #FCFAEF;
+  margin-bottom: 120px;
+
+  &__img{
+  display: block;
+  background: url(/src/img/gramo.jpg) center center no-repeat;
+  height: 460px;
+  background-size: cover;
+  }
+
+  .grid-container{
+    padding: 120px 0;
+  }
+
+  &__title{
+    grid-column:1 / span 6;
+
+    @include font(48px, 700, 48px);
+
+    font-family: Manrope, sans-serif;
+  }
+
+  &__description{
+    grid-column: 8 / span 5;
+
+    @include font(16px, 400, 24px);
+
+    font-family: Manrope, sans-serif;
+  }
+}

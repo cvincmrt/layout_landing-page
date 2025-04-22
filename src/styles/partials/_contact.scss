@@ -1,0 +1,23 @@
+.contact{
+  width: 100%;
+  margin-bottom: 120px;
+
+  &__title{
+    grid-column: span 12;
+
+    @include font(48px, 700, 48px);
+
+    font-family: Manrope, sans-serif;
+  }
+
+  &__form{
+    grid-column: 1 / span 6;
+  }
+
+  &__form > input, textarea{
+    width: 100%;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+  }
+
+}
