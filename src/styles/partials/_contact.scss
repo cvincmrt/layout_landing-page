@@ -14,10 +14,64 @@
     grid-column: 1 / span 6;
   }
 
-  &__form > input, textarea{
+  &__name{
+    @include font(14px, 400, 20px, #7E7E83);
+
+    font-family: Manrope, sans-serif;
+    padding: 14px 16px;
+    margin-bottom: 16px;
     width: 100%;
     background-color: #F9F9F9;
     border-radius: 8px;
   }
 
+  &__email{
+    @include font(14px, 400, 20px, #7E7E83);
+
+    font-family: Manrope, sans-serif;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    width: 100%;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+  }
+
+  &__message{
+    @include font(14px, 400, 20px, #7E7E83);
+
+    font-family: Manrope, sans-serif;
+    height: 120px;
+    padding: 14px 16px;
+    resize: none;
+    margin-bottom: 32px;
+    width: 100%;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+  }
+
+  &__btn{
+    @include btn;
+
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__company-details{
+    grid-column: 8 / span 5;
+
+    .company{
+
+      &__title{
+        @include font(14px, 400, 20px, #9393A3);
+
+        margin-bottom: 8px;
+      }
+
+      &__content{
+        @include font(16px, 400, 22px, #191919);
+
+        margin-bottom: 24px;
+      }
+    }
+  }
 }
